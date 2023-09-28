@@ -1,7 +1,7 @@
 'use client';
 import './globals.css'
 import { Fragment, useEffect, useState } from 'react'
-import SlidingText from '../components/SlidingText'
+import SlidingText from '../../public'
 import Projects from '../components/Projects'
 import Description from '../components/Description'
 import SlidingGallery from '../components/SlidingGallery'

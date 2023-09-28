@@ -6,22 +6,22 @@ import Modal from "./Modal";
 const projects = [
   {
     title: "C2 Montreal",
-    src: "c2montreal.png",
+    url: "https://maelacudini.github.io/Developer/c2montreal.png",
     color: "#000000",
   },
   {
     title: "Office Studio",
-    src: "officestudio.png",
+    url: "https://maelacudini.github.io/Developer/officestudio.png",
     color: "#8C8C8C",
   },
   {
     title: "Locomotive",
-    src: "locomotive.png",
+    url: "https://maelacudini.github.io/Developer/locomotive.png",
     color: "#EFE8D3",
   },
   {
     title: "Silencio",
-    src: "silencio.png",
+    url: "https://maelacudini.github.io/Developer/silencio.png",
     color: "#706D63",
   },
 ];

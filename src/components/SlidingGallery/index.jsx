@@ -6,22 +6,22 @@ import Image from "next/image";
 const images = [
   {
     title: "C2 Montreal",
-    url: "https://maelacudini.github.io/Developer/public/images/c2montreal.png",
+    url: "https://maelacudini.github.io/Developer/c2montreal.png",
     color: "#000000",
   },
   {
     title: "Office Studio",
-    url: "https://maelacudini.github.io/Developer/public/images/officestudio.png",
+    url: "https://maelacudini.github.io/Developer/officestudio.png",
     color: "#8C8C8C",
   },
   {
     title: "Locomotive",
-    url: "https://maelacudini.github.io/Developer/public/images/locomotive.png",
+    url: "https://maelacudini.github.io/Developer/locomotive.png",
     color: "#EFE8D3",
   },
   {
     title: "Silencio",
-    url: "https://maelacudini.github.io/Developer/public/images/silencio.png",
+    url: "https://maelacudini.github.io/Developer/silencio.png",
     color: "#706D63",
   },
 ];

@@ -58,7 +58,7 @@ export default function index({ modal, projects }) {
               key={`modal_${index}`}
             >
               <Image
-                src={`/images/${src}`}
+                src={project.url}
                 width={300}
                 height={200}
                 alt={project.title}
