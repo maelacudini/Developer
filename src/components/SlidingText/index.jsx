@@ -45,7 +45,7 @@ export default function index() {
         className={style.imagesliding}
         loading="lazy"
         alt="image"
-        src="/images/bg.jpg"
+        src="https://maelacudini.github.io/Developer/bg.jpg"
       />
       <div className={style.sliderContainer}>
         <div ref={slider} className={style.slider}>
