@@ -1,0 +1,65 @@
+.container {
+  margin-top: 100px;
+  padding: 70px;
+}
+
+.outercontainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container > h1:first-child {
+  font-size: 56px;
+  margin: 0px 0px 16px 0px;
+}
+
+.innercontainer {
+  display: flex;
+  gap: 20px;
+  width: 100% !important;
+}
+
+.inner:first-child {
+  flex: 0 0 60%;
+}
+
+.inner:last-child {
+  flex: 0 0 40%;
+}
+
+.inner {
+  position: relative;
+}
+
+.slider {
+  background-color: white;
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+.button {
+  position: absolute;
+  bottom: -150px;
+  right: 10%;
+  border: none;
+  border-radius: 100%;
+  height: 150px;
+  width: 150px;
+  background-color: #292929;
+  color: white;
+  font-size: 20px;
+}
+
+@media screen and (max-width: 689px) {
+  .container {
+    padding: 20px;
+  }
+
+  .innercontainer {
+    display: block;
+  }
+}

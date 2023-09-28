@@ -1,0 +1,24 @@
+{
+  "name": "portfolio",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "bootstrap": "^5.3.2",
+    "framer-motion": "^10.16.4",
+    "gsap": "^3.12.2",
+    "jquery": "^3.7.1",
+    "locomotive-scroll": "^5.0.0-beta.8",
+    "next": "latest",
+    "popper.js": "^1.16.1",
+    "react": "latest",
+    "react-dom": "latest",
+    "react-scroll": "^1.8.9",
+    "sass": "^1.68.0"
+  }
+}

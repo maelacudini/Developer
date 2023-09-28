@@ -1,0 +1,142 @@
+.header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  z-index: 99;
+}
+
+.logo {
+  display: flex;
+  width: 150px;
+  overflow: hidden;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+.logo > p,
+.name > p {
+  margin-left: 10px;
+  transition: all 0.5s cubic-bezier(0.76, 0, 0.24, 1);
+}
+
+.name {
+  display: flex;
+}
+
+.logo:hover {
+  .copyright {
+    transform: translateX(-130px);
+  }
+  .name {
+    padding-right: 30px;
+    .codeBy {
+      transform: translateX(-150px);
+    }
+    .fullname {
+      transform: translateX(-150px);
+    }
+  }
+}
+
+.nav {
+  display: flex;
+  align-self: center;
+  gap: 20px;
+}
+
+.el {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  z-index: 1;
+  padding: 15px;
+  cursor: pointer;
+  &:hover {
+    .indicator {
+      transform: scale(1);
+    }
+  }
+  .indicator {
+    position: absolute;
+    width: 5px;
+    height: 5px;
+    top: 45px;
+    left: 50%;
+    background-color: white;
+    border-radius: 50%;
+    transform: scale(0) translateX(-50%);
+    transition: transform 0.2s cubic-bezier(0.76, 0, 0.24, 1);
+  }
+}
+
+.containerbtn {
+  scale: 0;
+  padding: 20px;
+  position: fixed;
+  right: 0;
+  z-index: 55;
+  overflow: hidden;
+
+  .button {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: rgb(41, 41, 41);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .burger {
+    width: 100%;
+    &::after,
+    &::before {
+      content: "";
+      display: block;
+      height: 2px;
+      width: 40%;
+      margin: auto;
+      background-color: white;
+      position: relative;
+      transition: transform 0.3s;
+    }
+
+    &::after {
+      top: -5px;
+    }
+
+    &::before {
+      top: 5px;
+    }
+  }
+
+  .burgerActive {
+    &::after {
+      transform: rotate(45deg);
+      top: -1px;
+    }
+
+    &::before {
+      transform: rotate(-45deg);
+      top: 0px;
+    }
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .logo {
+    display: none;
+  }
+
+  .nav {
+    justify-content: start !important;
+    width: 100%;
+  }
+}

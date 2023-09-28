@@ -1,0 +1,41 @@
+body {
+  margin: 0px;
+  cursor: default;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+.button {
+  border: 1px solid rgb(201, 201, 201);
+  padding: 20px;
+  border-radius: 50px;
+  background-color: transparent;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 400;
+}
+
+h1 {
+  font-size: 32px;
+}
+
+h2 {
+  font-size: 24px;
+}
+
+p {
+  font-weight: 300;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
