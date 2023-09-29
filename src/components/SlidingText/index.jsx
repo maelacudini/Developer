@@ -12,31 +12,29 @@ export default function index() {
 
   useEffect(() => {
     gsap.registerPlugin(ScrollTrigger);
-    requestAnimationFrame(animation);
     gsap.to(slider.current, {
       scrollTrigger: {
-        document: document.documentElement, //so it's going to start at the top of the document, the whole document
+        trigger: document.documentElement,
+        scrub: 0.25,
         start: 0,
-        end: window.innerHeight, //full lenght of the window
-        scrub: true,
-        onUpdate: (e) => (direction = e.direction * -1), //so it reverses the direction based on the scroll
+        end: window.innerHeight,
+        onUpdate: (e) => (direction = e.direction * -1),
       },
-      x: "-=300px", //so when you scroll it's going to move a bit by 300px
+      x: "-500px",
     });
+    requestAnimationFrame(animate);
   }, []);
 
-  const animation = () => {
-    if (xPercent <= -100) {
+  const animate = () => {
+    if (xPercent < -100) {
       xPercent = 0;
-    }
-
-    if (xPercent > 0) {
+    } else if (xPercent > 0) {
       xPercent = -100;
     }
     gsap.set(firstText.current, { xPercent: xPercent });
     gsap.set(secondText.current, { xPercent: xPercent });
+    requestAnimationFrame(animate);
     xPercent += 0.1 * direction;
-    requestAnimationFrame(animation);
   };
 
   return (
@@ -45,12 +43,12 @@ export default function index() {
         className={style.imagesliding}
         loading="lazy"
         alt="image"
-        src="https://maelacudini.github.io/Developer/bg.jpg"
+        src="/Developer/bg.jpg"
       />
       <div className={style.sliderContainer}>
         <div ref={slider} className={style.slider}>
-          <p ref={firstText}>Front End Developer</p>
-          <p ref={secondText}>Front End Developer</p>
+          <p ref={firstText}>Graphic Designer</p>
+          <p ref={secondText}>Graphic Designer</p>
         </div>
       </div>
     </div>

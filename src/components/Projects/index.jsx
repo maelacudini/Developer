@@ -5,23 +5,23 @@ import Modal from "./Modal";
 
 const projects = [
   {
-    title: "C2 Montreal",
-    url: "https://maelacudini.github.io/Developer/c2montreal.png",
+    title: "Paris",
+    url: "/Developer/site.jpg",
     color: "#000000",
   },
   {
-    title: "Office Studio",
-    url: "https://maelacudini.github.io/Developer/officestudio.png",
+    title: "Milan",
+    url: "/Developer/site2.jpg",
     color: "#8C8C8C",
   },
   {
-    title: "Locomotive",
-    url: "https://maelacudini.github.io/Developer/locomotive.png",
+    title: "Vienna",
+    url: "/Developer/site3.jpg",
     color: "#EFE8D3",
   },
   {
-    title: "Silencio",
-    url: "https://maelacudini.github.io/Developer/silencio.png",
+    title: "Amsterdam",
+    url: "/Developer/site4.jpg",
     color: "#706D63",
   },
 ];

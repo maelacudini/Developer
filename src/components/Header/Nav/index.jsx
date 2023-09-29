@@ -1,7 +1,6 @@
 import style from "./style.module.scss";
 import Link from "./Link";
 import Footer from "./Footer";
-import Curve from "./Curve";
 import { motion } from "framer-motion";
 import { useLayoutEffect, useRef } from "react";
 import { ScrollTrigger } from "gsap/ScrollTrigger";

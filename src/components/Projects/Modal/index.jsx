@@ -50,19 +50,14 @@ export default function index({ modal, projects }) {
     >
       <div style={{ top: index * -100 + "%" }} className={style.modalSlider}>
         {projects.map((project, index) => {
-          const { src, color } = project;
+          const { url, color } = project;
           return (
             <div
               className={style.modal}
               style={{ backgroundColor: color }}
               key={`modal_${index}`}
             >
-              <Image
-                src={project.url}
-                width={300}
-                height={200}
-                alt={project.title}
-              />
+              <Image src={url} width={300} height={200} alt={project.title} />
             </div>
           );
         })}

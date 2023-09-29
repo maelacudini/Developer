@@ -1,37 +1,44 @@
-import style from "./style.module.scss";
+"use client";
+import styles from "./style.module.scss";
+import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
+import { opacity, slideUp } from "./Animations";
 
-const opacity = {
-  initial: {
-    opacity: 0,
-  },
-  enter: {
-    opacity: 0.75,
-    transition: { duration: 1, delay: 0.2 },
-  },
-};
+const words = [
+  "Hello",
+  "Bonjour",
+  "Ciao",
+  "Olà",
+  "やあ",
+  "Hallå",
+  "Guten tag",
+  "Hallo",
+];
 
-const slideUp = {
-  initial: {
-    top: 0,
-  },
-  exit: {
-    top: "-100vh",
-    transition: { duration: 0.8, ease: [0.76, 0, 0.24, 1], delay: 0.2 },
-  },
-};
+export default function Index() {
+  const [index, setIndex] = useState(0);
 
-export default function index() {
+  useEffect(() => {
+    if (index == words.length - 1) return;
+    setTimeout(
+      () => {
+        setIndex(index + 1);
+      },
+      index == 0 ? 1000 : 150
+    );
+  }, [index]);
+
   return (
-    <motion.section
+    <motion.div
       variants={slideUp}
       initial="initial"
       exit="exit"
-      className={style.loader}
+      className={styles.introduction}
     >
-      <motion.h1 variants={opacity} initial="initial" animate="enter">
-        Just a minute...
-      </motion.h1>
-    </motion.section>
+      <motion.p variants={opacity} initial="initial" animate="enter">
+        <span></span>
+        {words[index]}
+      </motion.p>
+    </motion.div>
   );
 }

@@ -30,23 +30,9 @@
   height: auto;
 }
 
-.cursor,
-.cursorLabel {
-  width: 80px;
-  height: 80px;
-  border-radius: 50%;
-  background-color: #455ce9;
-  color: white;
-  position: absolute;
-  z-index: 2;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 14px;
-  font-weight: 300;
-  pointer-events: none;
-}
-
-.cursorLabel {
-  background-color: transparent;
+@media screen and (max-width: 600px) {
+  .modalContainer {
+    width: 200px;
+    height: 150px;
+  }
 }

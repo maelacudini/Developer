@@ -18,21 +18,19 @@ export default function index() {
       <motion.div style={{ width: width }} className={style.line}></motion.div>
       <article>
         <motion.h2>
-          With a keen eye for detail and a love for elegant design, I specialize
-          in crafting user interfaces that not only look stunning but also
-          provide seamless experiences. My mission is to bridge the gap between
-          technology and aesthetics, ensuring that every pixel serves a purpose.
+          With a sharp eye for detail and a deep appreciation for elegant
+          design, I specialize in the art of graphic design. My expertise lies
+          in creating visually striking and aesthetically pleasing designs that
+          captivate the viewer's attention.
         </motion.h2>
         <p>
-          I find inspiration in the challenges of the digital world, just as I
-          do in scaling new heights in the great outdoors. Whether it's
-          designing a captivating website or tackling a steep ascent, I thrive
-          on pushing boundaries and embracing the journey.
-        </p>
-        <p>
-          If you're looking for a developer who can turn your vision into a
-          reality while ensuring every detail shines, I'm here to bring your
-          projects to life.
+          My mission is to bridge the gap between art and communication,
+          ensuring that every design I produce effectively conveys its intended
+          message. I find inspiration in the challenges of the design world,
+          much like I do in pushing my creative boundaries in other aspects of
+          life. Whether I'm crafting a compelling visual identity or embarking
+          on a personal adventure, I thrive on embracing the journey and
+          reaching new heights in the world of design.
         </p>
       </article>
     </section>

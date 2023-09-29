@@ -33,7 +33,7 @@ export default function index() {
               }}
               style={{ margin: "0", marginBottom: "30px" }}
             >
-              Welcome to my website, I'm Cameron and I'm a Front End Developer
+              Welcome to my website, I'm Cameron and I'm a Graphic Designer
               based in North Germany.
             </motion.h2>
           </div>
@@ -50,8 +50,8 @@ export default function index() {
               }}
               style={{ margin: "0" }}
             >
-              My vision is to make the digital world more accessible, visually
-              appealing, and user-friendly, one pixel at a time.
+              My vision is to breathe life into ideas, crafting visually
+              captivating designs that leave a lasting impact.
             </motion.p>
             <button
               data-scroll
