@@ -1,15 +1,13 @@
 'use client';
 import './globals.css'
-import { Fragment, useEffect, useState } from 'react'
+import { useEffect, useState } from 'react'
 import SlidingText from '../components/SlidingText'
 import Projects from '../components/Projects'
 import Description from '../components/Description'
 import SlidingGallery from '../components/SlidingGallery'
 import Cursor from '../components/Cursor'
 import Footer from '../components/Footer'
-import About from '../components/About'
 import Loader from '../components/Loader'
-import Header from '../components/Header'
 import { AnimatePresence } from 'framer-motion';
 
 export default function Home() {
@@ -19,7 +17,15 @@ export default function Home() {
     (
       async () => {
         const LocomotiveScroll = (await import('locomotive-scroll')).default
-        const locomotiveScroll = new LocomotiveScroll();
+        const locomotiveScroll = new LocomotiveScroll({
+          smooth: true,
+          smartphone: {
+            smooth: true,
+          },
+          tabet: {
+            smooth: true
+          }
+        });
 
         setTimeout(() => {
           setIsLoading(false);
@@ -40,7 +46,6 @@ export default function Home() {
       <Description />
       <Projects />
       <SlidingGallery />
-      <About />
       <Footer />
     </main>
   )

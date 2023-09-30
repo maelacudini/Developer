@@ -21,7 +21,7 @@ export default function index() {
       <div className={style.outercontainer}>
         <article className={style.innercontainer}>
           <div className={style.inner}>
-            <motion.h2
+            <motion.h1
               initial={{
                 y: 20,
                 opacity: 0,
@@ -33,9 +33,9 @@ export default function index() {
               }}
               style={{ margin: "0", marginBottom: "30px" }}
             >
-              Welcome to my website, I'm Cameron and I'm a Graphic Designer
-              based in North Germany.
-            </motion.h2>
+              Helping brands to stand out in the digital era. Together we will
+              set the new status quo. No nonsense, always on the cutting edge.
+            </motion.h1>
           </div>
           <div className={style.inner}>
             <motion.p
@@ -53,13 +53,15 @@ export default function index() {
               My vision is to breathe life into ideas, crafting visually
               captivating designs that leave a lasting impact.
             </motion.p>
-            <button
-              data-scroll
-              data-scroll-speed={0.1}
-              className={style.button}
-            >
-              See more
-            </button>
+            <Magnetic>
+              <button
+                data-scroll
+                data-scroll-speed={0.1}
+                className={style.button}
+              >
+                See more
+              </button>
+            </Magnetic>
           </div>
         </article>
       </div>

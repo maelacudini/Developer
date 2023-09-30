@@ -38,3 +38,35 @@
   left: 100%;
   top: 0;
 }
+
+.desc {
+  position: absolute;
+  color: white;
+  top: 25%;
+  right: 20%;
+}
+
+.desc > svg {
+  margin-bottom: 50px;
+  margin-left: -10px;
+  transform: rotate(45deg);
+}
+
+@media screen and (max-width: 900px) {
+  .desc {
+    right: 10%;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .desc {
+    top: unset;
+    bottom: 25%;
+    right: 5%;
+  }
+
+  .desc > svg {
+    transform: rotate(135deg);
+    margin-bottom: 30px;
+  }
+}

@@ -13,7 +13,7 @@
 
 .logo {
   display: flex;
-  width: 150px;
+  width: 170px;
   overflow: hidden;
   white-space: nowrap;
   cursor: pointer;
@@ -36,10 +36,10 @@
   .name {
     padding-right: 30px;
     .codeBy {
-      transform: translateX(-150px);
+      transform: translateX(-170px);
     }
     .fullname {
-      transform: translateX(-150px);
+      transform: translateX(-170px);
     }
   }
 }

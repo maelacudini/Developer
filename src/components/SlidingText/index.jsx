@@ -45,6 +45,23 @@ export default function index() {
         alt="image"
         src="/Developer/bg.jpg"
       />
+      <div data-scroll data-scroll-speed={0.1} className={style.desc}>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="50"
+          height="50"
+          fill="currentColor"
+          className="bi bi-arrow-down-short"
+          viewBox="0 0 16 16"
+        >
+          <path
+            fillRule="evenodd"
+            d="M8 4a.5.5 0 0 1 .5.5v5.793l2.146-2.147a.5.5 0 0 1 .708.708l-3 3a.5.5 0 0 1-.708 0l-3-3a.5.5 0 1 1 .708-.708L7.5 10.293V4.5A.5.5 0 0 1 8 4z"
+          />
+        </svg>
+        <h2>Freelance</h2>
+        <h2>Graphic Designer</h2>
+      </div>
       <div className={style.sliderContainer}>
         <div ref={slider} className={style.slider}>
           <p ref={firstText}>Graphic Designer</p>

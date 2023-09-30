@@ -12,7 +12,7 @@ export default function index({ index, project, setModal }) {
         setModal({ active: false, index: index });
       }}
     >
-      <h2>{title}</h2>
+      <h1>{title}</h1>
       <p>{color}</p>
     </div>
   );

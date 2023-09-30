@@ -2,6 +2,7 @@ import { Fragment, useState } from "react";
 import style from "./style.module.scss";
 import Project from "./Project";
 import Modal from "./Modal";
+import Magnetic from "../Magnetic";
 
 const projects = [
   {
@@ -45,19 +46,32 @@ const scaleAnimation = {
 export default function index() {
   const [modal, setModal] = useState({ active: false, index: 0 });
   return (
-    <div id="work" className={style.main}>
-      <div className={style.body}>
-        <h1>My projects</h1>
-        {projects.map((project, index) => (
-          <Project
-            key={index}
-            index={index}
-            project={project}
-            setModal={setModal}
-          />
-        ))}
+    <Fragment>
+      <div id="work" className={style.main}>
+        <div className={style.body}>
+          <h1>My projects</h1>
+          {projects.map((project, index) => (
+            <Project
+              key={index}
+              index={index}
+              project={project}
+              setModal={setModal}
+            />
+          ))}
+        </div>
+        <Modal modal={modal} projects={projects} />
       </div>
-      <Modal modal={modal} projects={projects} />
-    </div>
+      <div
+        style={{
+          display: "flex",
+          justifyContent: "center",
+          alignItems: "center",
+        }}
+      >
+        <Magnetic>
+          <button className={style.button}>More work</button>
+        </Magnetic>
+      </div>
+    </Fragment>
   );
 }
