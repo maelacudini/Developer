@@ -37,7 +37,7 @@ export default function index() {
               set the new status quo. No nonsense, always on the cutting edge.
             </motion.h1>
           </div>
-          <div className={style.inner}>
+          <div data-scroll-section className={style.inner}>
             <motion.p
               initial={{
                 y: 20,
