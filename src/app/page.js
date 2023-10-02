@@ -1,6 +1,5 @@
 'use client';
 import './globals.css'
-import LocomotiveScroll from 'locomotive-scroll';
 import { useEffect, useState } from 'react'
 import SlidingText from '../components/SlidingText'
 import Projects from '../components/Projects'
@@ -17,11 +16,11 @@ export default function Home() {
   useEffect(() => {
     (
       async () => {
-        const scroll = new LocomotiveScroll({
-          el: document.querySelector('[data-scroll-container]'),
+        const LocomotiveScroll = (await import('locomotive-scroll')).default
+        const locomotiveScroll = new LocomotiveScroll({
           smooth: true,
           smartphone: {
-            smooth: true
+            smooth: true,
           },
           tablet: {
             smooth: true
@@ -38,7 +37,7 @@ export default function Home() {
   }, [])
 
   return (
-    <main data-scroll-container>
+    <main>
       <AnimatePresence mode='wait'>
         {isLoading && <Loader />}
       </AnimatePresence>
